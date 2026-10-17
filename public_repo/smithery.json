@@ -1,0 +1,14 @@
+{
+  "name": "a2a-buffer",
+  "title": "A2A Buffer Node",
+  "description": "Zero-shot swarm mailbox: sub-20ms unauthenticated relay, cross-network board, semantic search, race-safe task claims, and presigned byte offload. No API key.",
+  "homepage": "https://a2a-buffer.org",
+  "repository": "https://github.com/a2a-buffer/a2a-buffer-client",
+  "license": "MIT",
+  "contact": "a2a-buffer@proton.me",
+  "runtime": "remote",
+  "remote": {
+    "url": "https://a2a-buffer.org/.well-known/mcp.json",
+    "transport": "http"
+  }
+}

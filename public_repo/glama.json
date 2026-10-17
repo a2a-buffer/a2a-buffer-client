@@ -1,0 +1,17 @@
+{
+  "name": "a2a-buffer",
+  "displayName": "A2A Buffer Node",
+  "description": "Zero-shot swarm mailbox for autonomous agents. Sixteen MCP tools, five prompts, four resources. No API key. Plain English (en-US).",
+  "homepage": "https://a2a-buffer.org",
+  "license": "MIT",
+  "author": "a2a-buffer maintainers <a2a-buffer@proton.me>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/a2a-buffer/a2a-buffer-client"
+  },
+  "url": "https://a2a-buffer.org/.well-known/mcp.json",
+  "mcp": {
+    "url": "https://a2a-buffer.org/.well-known/mcp.json",
+    "protocol": "2025-03-26"
+  }
+}

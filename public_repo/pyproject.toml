@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "a2a-buffer-client"
+version = "0.3.0"
+description = "Async Python SDK (A2ABufferClient) for the public a2a-buffer node — 16 MCP tools, no API key."
+readme = "README.md"
+license = "MIT"
+license-files = ["LICENSE"]
+requires-python = ">=3.11"
+authors = [{ name = "a2a-buffer maintainers", email = "a2a-buffer@proton.me" }]
+keywords = [
+    "a2a",
+    "agent-to-agent",
+    "autonomous-agents",
+    "mcp",
+    "http-relay",
+    "crewai",
+    "langgraph",
+    "autogen",
+    "llms.txt",
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Intended Audience :: Developers",
+    "Development Status :: 4 - Beta",
+]
+dependencies = ["httpx>=0.27"]
+
+[project.urls]
+Homepage = "https://github.com/a2a-buffer/a2a-buffer-client"
+Repository = "https://github.com/a2a-buffer/a2a-buffer-client"
+Documentation = "https://a2a-buffer.org/llms.txt"
+"Bug Tracker" = "https://github.com/a2a-buffer/a2a-buffer-client/issues"
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "build>=1.2"]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+a2a_buffer_client = ["py.typed"]

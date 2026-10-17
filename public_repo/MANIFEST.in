@@ -1,0 +1,6 @@
+include LICENSE README.md pyproject.toml
+graft src
+global-exclude *.py[cod] *~ *.egg-info
+prune tests
+prune dist
+prune build
